@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import React from "react";
-import { github } from "../utils/Icons";
+import { sunset } from "../utils/Icons";
 import ThemeDropdown from "./ThemeDropdown/ThemeDropdown";
 import SearchDialog from "./SearchDialog/SearchDialog";
 import { useGlobalContext } from "../context/globalContext";
@@ -23,10 +23,10 @@ function Navbar() {
           <Button
             className="source-code-btn flex items-center gap-2"
             onClick={() => {
-              router.push("https//github.com");
+              router.push("https://zoom.earth/");
             }}
           >
-            {github} Source Code
+            {sunset} Zoom Earth
           </Button>
         </div>
       </div>

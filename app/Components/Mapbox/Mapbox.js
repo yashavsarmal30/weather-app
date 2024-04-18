@@ -39,7 +39,7 @@ function Mapbox() {
   }
 
   return (
-    <div className="flex-1 basis-[50%] border rounded-lg">
+    <div className="flex-1 basis-[80%] border rounded-lg">
       <MapContainer
         center={[activeCityCords.lat, activeCityCords.lon]}
         zoom={13}
@@ -49,7 +49,7 @@ function Mapbox() {
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         />
 
         <FlyToActiveCity activeCityCords={activeCityCords} />
